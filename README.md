@@ -12,19 +12,19 @@ This project implements a flight booking application similar to the Ruby on Rail
 
 1. **Clone the Repository:**
    - Open CMD and navigate to the desired directory where you want to clone the repository.
-   - Use the following command, replacing `https://github.com/Ekott2006/odin-asp.net-private-events.git` with the actual GitHub repository URL:
+   - Use the following command, replacing `https://github.com/Ekott2006/odin-asp.net-flight-booker.git` with the actual GitHub repository URL:
 
    ```bash
-   git clone https://github.com/Ekott2006/odin-asp.net-private-events.git
+   git clone https://github.com/Ekott2006/odin-asp.net-flight-booker.git
    ```
 
-   This will clone the repository into a new folder named `odin-asp.net-private-events`.
+   This will clone the repository into a new folder named `odin-asp.net-flight-booker`.
 
 2. **Navigate to Project Directory:**
    - Change directory into the cloned repository:
 
    ```bash
-   cd odin-asp.net-private-events/WebApp
+   cd odin-asp.net-flight-booker/WebApp
    ```
 
 3. **Install Packages:**
