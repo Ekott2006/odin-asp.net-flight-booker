@@ -1,0 +1,9 @@
+.input-div {
+    width: 40%
+}
+
+@media (max-width: 768px) {
+    .input-div {
+        width: 100%
+    }
+}

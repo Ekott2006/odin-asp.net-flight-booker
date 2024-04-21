@@ -1,0 +1,30 @@
+@model WebApp.Model.Flight
+
+<h3 class="text-center"> Flight Info </h3>
+
+<dl class="row">
+    <dt class="col-sm-4">
+        @Html.DisplayNameFor(model => model.Duration)
+    </dt>
+    <dd class="col-sm-8">
+        @Html.DisplayFor(model => model.Duration)
+    </dd>
+    <dt class="col-sm-4">
+        Departure Date and Time
+    </dt>
+    <dd class="col-sm-8">
+        @Html.DisplayFor(model => model.DepartureDateTime)
+    </dd>
+    <dt class="col-sm-4">
+        @Html.DisplayNameFor(model => model.ArrivalAirport.Code)
+    </dt>
+    <dd class="col-sm-8">
+        @Html.DisplayFor(model => model.ArrivalAirport.Code)
+    </dd>
+    <dt class="col-sm-4">
+        @Html.DisplayNameFor(model => model.DepartureAirport.Code)
+    </dt>
+    <dd class="col-sm-8">
+        @Html.DisplayFor(model => model.DepartureAirport.Code)
+    </dd>
+</dl>

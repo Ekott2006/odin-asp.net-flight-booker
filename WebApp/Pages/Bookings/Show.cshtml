@@ -1,0 +1,29 @@
+@page "{id}"
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebApp.Model
+@model ShowModel
+
+@{
+    ViewData["Title"] = "My Booking";
+}
+
+<partial name="_FlightDetailPartial" model="Model.GetBooking.Flight"/>
+
+<h3 class="text-center">Passengers</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Passenger p in Model.GetBooking.Passengers)
+    {
+        <tr>
+            <td>@p.Name</td>
+            <td>@p.Email</td>
+        </tr>
+    }
+    </tbody>
+</table>
