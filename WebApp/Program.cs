@@ -18,7 +18,7 @@ WebApplication app = builder.Build();
 using (IServiceScope scope = app.Services.CreateScope())
 {
     DataContext context = scope.ServiceProvider.GetRequiredService<DataContext>();
-    SeedDatabase.SeedFlightData(context).Wait();
+    await SeedDatabase.SeedFlightData(context);
     if (!context.Flights.Any()) throw new Exception("Unable to Seed Database");
 }
 

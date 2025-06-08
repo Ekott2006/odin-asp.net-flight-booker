@@ -80,7 +80,7 @@ public static class SeedDatabase
         List<DateTime> dates = [];
         for (int i = 0; i < 10; i++)
         {
-            dates.Add(DateTime.Today.AddDays(i));
+            dates.Add(DateTime.UtcNow.AddDays(i));
         }
 
         return dates;
